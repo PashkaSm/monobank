@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap");
 
+:root {
+  --text-grey-color: #a3a3a3;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,10 +18,10 @@ body {
 }
 
 .wrapper {
-  display:grid;
+  display: grid;
   grid-template-columns: 150px 1fr;
   grid-template-rows: 40px 1000px;
-  
+
 }
 
 div {
@@ -31,7 +35,7 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #2c2c2c;
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -42,7 +46,7 @@ div {
   justify-content: space-between;
   align-items: center;
   width: 98%;
- 
+
 }
 
 .header-logo-ref {
@@ -66,14 +70,14 @@ div {
 }
 
 .header-logo-web {
-  color: #878686;
+  color: var(--text-grey-color);
   font-weight: 100;
 }
 
 .header-currency {
   font-size: 12px;
   font-weight: 300;
-  color: #878686;
+  color: var(--text-grey-color);
   width: 400px;
 }
 
@@ -101,13 +105,13 @@ div {
 }
 
 .header-settings-item {
-  background-color: #313131;
+  background-color: #363636;
   padding: 0px 7px;
 }
 
 .header-settings-item a {
   text-decoration: none;
-  color: #878686;
+  color: white;
 }
 
 .header-settings-item:first-child {
@@ -125,7 +129,7 @@ div {
 }
 
 .header-user-grats {
-  color: #878686;
+  color: var(--text-grey-color);
   font-size: 12px;
 }
 
@@ -172,7 +176,6 @@ div {
   margin-left: -14px;
 }
 
-// sidebaritem / sidebarlist
 
 .item-container {
   width: 100%;
@@ -181,28 +184,28 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color:#878686;
-  
+  color: #878686;
+
 }
 
 .sidebar-container {
   width: 150px;
-  background-color:#313131;
+  background-color: #313131;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.sidebar-wrapper{
+.sidebar-wrapper {
   margin-top: 50px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  color:#a3a0a0;
+  color: #a3a0a0;
 }
 
-.side-image{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.side-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
